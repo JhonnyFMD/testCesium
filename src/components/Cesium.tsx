@@ -43,7 +43,7 @@ export  default function Cesium() {
   const cesiumWorldTerrain = createWorldTerrain();
 
   const viwerOptions = {
-    sceneModePicker: true,
+    sceneModePicker: false,
     selectionIndicator: false,
     timeline: true,
     animation: false,
@@ -69,7 +69,7 @@ export  default function Cesium() {
       terrainProvider={cesiumWorldTerrain}
       {...viwerOptions}
     >
-      {/*<Cesium3DTileset url={tileset}/>*/}
+      <Cesium3DTileset url={tileset}/>
       <Globe enableLighting={false} dynamicAtmosphereLighting={true} />
       <PolylineCollection>
         <Polyline positions={[cartagenaPosition, mexicoPosition]} width={4} />
