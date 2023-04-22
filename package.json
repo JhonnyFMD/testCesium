@@ -6,17 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
   },
   "dependencies": {
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
+    "cesium": "^1.104.0",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "mapbox-gl": "^2.14.1",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-map-gl": "^7.0.23",
+    "react-mapbox-gl": "^5.1.1",
+    "resium": "^1.16.1",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "symlink-dir": "^5.1.1"
   }
 }
