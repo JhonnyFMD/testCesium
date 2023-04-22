@@ -43,8 +43,9 @@ export  default function Cesium() {
   const cesiumWorldTerrain = createWorldTerrain();
 
   const viwerOptions = {
-    sceneModePicker: false,
+    sceneModePicker: true,
     selectionIndicator: false,
+    baseLayerPicker: false,
     timeline: true,
     animation: false,
   };
